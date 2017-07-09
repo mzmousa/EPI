@@ -29,8 +29,10 @@ int CountBits (int x) {
 ### Set, clear, toggle bits
 **Set** xth bit (0 being rightmost bit): ```number |= (1 << x);```
 0000 |= (1 << 3) => 0000 |= 1000 => 1000
+
 **Clear** xth bit: ``` number &= ~(1 << x);```
 1111 &= ~(1 << 2) => 1111 &= ~(0100) => 1111 &= 1011 => 1011
+
 **Toggle** xth bit, since 0^1=1 and 1^1=0: ``` number ^= (1 << x);```
 1111 ^= (1 << 1) => 1111 ^= 0010 => 1101
 0000 ^= (1 << 1) => 0000 ^= 0010 => 0010
